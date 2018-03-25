@@ -136,7 +136,49 @@ header .main-banner {
 /* MAIN CONTENT DEFINITIONS */
 /* ************************ */
 
+main {
+  margin: 3rem 0 5rem 0;
+}
 
+.container.flex.supporting {
+  justify-content: center;
+}
+
+.container.flex.supporting .flex_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.container.flex.supporting .flex_item img {
+  width: 3.5rem;
+}
+
+.information {
+  display: flex;
+  justify-content: center;
+}
+
+.info {
+width: 35%;
+}
+
+.title {
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  color: white;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+}
+
+.info.philosophy {
+  margin-right: 5%;
+}
 
 /* *************************** */
 /* MAIN RESPONSIVE DEFINITIONS */
