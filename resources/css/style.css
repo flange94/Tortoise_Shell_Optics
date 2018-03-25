@@ -140,6 +140,8 @@ main {
   margin: 3rem 0 5rem 0;
 }
 
+/* Supporting Section */
+
 .container.flex.supporting {
   justify-content: center;
 }
@@ -159,6 +161,8 @@ main {
   width: 3.5rem;
 }
 
+/* Information Section */
+
 .information {
   display: flex;
   justify-content: center;
@@ -166,6 +170,10 @@ main {
 
 .info {
 width: 35%;
+}
+
+.info.philosophy {
+  margin-right: 5%;
 }
 
 .title {
@@ -176,14 +184,52 @@ width: 35%;
   margin-bottom: 1rem;
 }
 
-.info.philosophy {
-  margin-right: 5%;
-}
-
 /* *************************** */
 /* MAIN RESPONSIVE DEFINITIONS */
 /* *************************** */
 
+@media only screen and (max-width: 560px) {
+  main {
+    margin: 0;
+  }
+
+  .container.flex.supporting {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem 0;
+  }
+
+  .container.flex.supporting .flex_item {
+    margin: 1.54rem;
+    height: 6rem;
+  }
+
+  .item_text,
+  .info p {
+  font-size: 0.77rem;
+  }
+
+  .information {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .title {
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .info {
+    width: 100%;
+  }
+
+  .info.philosophy {
+    margin: 0 0 4rem 0;
+  }
+
+}
 
 
 /* ****************** */
