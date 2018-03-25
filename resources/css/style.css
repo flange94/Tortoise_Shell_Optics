@@ -225,7 +225,7 @@ width: 35%;
     width: 100%;
   }
 
-  .info.philosophy {
+  .info {
     margin: 0 0 4rem 0;
   }
 
@@ -236,8 +236,35 @@ width: 35%;
 /* FOOTER DEFINITIONS */
 /* ****************** */
 
+footer {
+  padding: 4rem;
+  background-color: azure;
+}
 
+footer img {
+  height: 1.5rem;
+}
+
+footer span {
+  margin-left: 1rem;
+}
 
 /* ***************************** */
 /* FOOTER RESPONSIVE DEFINITIONS */
 /* ***************************** */
+
+@media only screen and (max-width: 1080px) {
+  footer .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  footer {
+    text-align: center;
+  }
+
+  footer span {
+    display: none;
+  }
+}
